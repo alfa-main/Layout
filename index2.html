@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+	.item-list{
+		width: 50%;
+		height: 100%;
+		overflow: hidden;
+		border: 1px solid yellow;
+		padding: 0;
+		margin: 0;
+		transition: .5s;
+
+	}
+	.btn-list{
+		display: flex;
+		justify-content: space-between;
+		color: red;
+	}
+	.btn-list p{
+		width: 100%;
+		padding: 5px;
+		background: yellow;
+	}
+	.btn-list label{
+		margin-left: 2px;
+		padding: 10px;
+		background: yellow;
+	}
+	.item-list h5{
+		padding: 10px;
+	}
+		ul{
+
+		}
+		ul li{
+			list-style: none;
+			margin: 10px;
+			margin-left: 30px;
+		}
+		.check-btn{
+		display: none;
+	}
+		.content{
+			height: 0;
+			transition: 1s;
+		}
+	
+	.check-btn:checked+.active-item-list{
+		height:160px;
+		transition:1s;
+	}
+</style>
+
+<body>
+		
+	<section class="item-list">
+		<div class="btn-list">
+			<p>Find a service</p>
+			<label for="one">></label>
+		</div>
+		    <input type="checkbox" id='one' class="check-btn">
+	    <div class='content active-item-list'>
+		    <h5>Internacional services to Anther Country</h5>
+		    <ul>
+			    <li>Emergency</li>
+			    <li>Time Critical</li>
+			    <li>Less Urgent</li>
+		    </ul>
+	    </div>
+
+	</section>
+	<section class="item-list">
+		    <div class="btn-list">
+			    <p>Find a service</p>
+			    <label for="two">></label>
+		    </div>
+		    <input type="checkbox" id='two' class="check-btn">
+	    <div class='content active-item-list'>
+		    <h5>Internacional services to Anther Country</h5>
+		    <ul>
+			    <li>Emergency</li>
+			    <li>Time Critical</li>
+			    <li>Less Urgent</li>
+		    </ul>
+	    </div>
+
+	</section>	
+	<section class="item-list">
+		<div class="btn-list">
+			<p>Find a service</p>
+			<label for="three">></label>
+		</div>
+		    <input type="checkbox" id='three' class="check-btn">
+	    <div class='content active-item-list'>
+		    <h5>Internacional services to Anther Country</h5>
+		    <ul>
+			    <li>Emergency</li>
+			    <li>Time Critical</li>
+			    <li>Less Urgent</li>
+		    </ul>
+	    </div>
+
+	</section>
+
+	
+</body>
+</html>
